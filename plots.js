@@ -16,7 +16,7 @@ function buildTable(dates, temps, humidities, pressures, windSpeeds, windDirecti
   }
 }
 
-d3.json('data/forecast.json').then(function(data) { 
+d3.json('data_forecast.json').then(function(data) { 
   console.log(data);
 
   d3.select("title").text(`${data.city.name} 5-day Forecast`)
